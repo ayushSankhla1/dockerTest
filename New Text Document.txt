@@ -1,0 +1,10 @@
+curl --header "Content-Type: application/json" --request POST --data '{"name":"xyz"}' http://localhost:5000/welcome
+
+
+curl --header "Content-Type: application/json" --request POST --data '{"name":"xyz"}' http://192.168.56.1:5000/welcome
+
+https://docs.docker.com/config/containers/container-networking/
+docker run -d -p 5000:5000 flask-sample
+docker run -d -P flask-sample
+docker stop a7825cf5b049
+docker ps -a
